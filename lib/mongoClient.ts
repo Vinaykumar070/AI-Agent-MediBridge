@@ -8,7 +8,7 @@ if (!MONGODB_URI) {
 const db = process.env.MONGO_DB;
 const password = process.env.MONGO_PASSWORD
 //const uri = process.env.MONGODB_URI || `mongodb+srv://chatbot:chatbot@cluster0.h8j8p.mongodb.net/aiagent?retryWrites=true&w=majority&appName=Cluster0`;
-const uri = process.env.MONGODB_URI || `mongodb+srv://praveen:1234567890@cluster0.vcvgc.mongodb.net/chatbot?retryWrites=true&w=majority&appName=Cluster0`
+const uri = process.env.MONGODB_URI || ``
 const options = {};
 
 export const client: MongoClient = new MongoClient(uri, options);

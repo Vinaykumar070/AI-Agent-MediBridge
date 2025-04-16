@@ -27,7 +27,7 @@ const doctorSchema = new Schema<Doctor>(
 if (mongoose.models.DoctorModal) {
   delete mongoose.models.DoctorModal;
 }
-const DoctorModel = mongoose.models?.Doctor || model<Doctor>("DoctosList", doctorSchema);
+const DoctorModel = mongoose.models?.DoctorsList || model<Doctor>("DoctorsList", doctorSchema);
 
 
 export default DoctorModel;
