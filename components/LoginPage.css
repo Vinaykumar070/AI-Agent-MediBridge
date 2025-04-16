@@ -1,0 +1,171 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 20px;
+}
+
+.login-wrapper {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 440px;
+  transition: all 0.3s ease;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  font-size: 2rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: #636e72;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-weight: 500;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #636e72;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+}
+
+.error input {
+  border-color: #ff7675;
+}
+
+.error-message {
+  color: #ff7675;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.additional-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #636e72;
+  gap: 8px;
+}
+
+.forgot-password {
+  color: #6c5ce7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #5b4bc4;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-button:hover {
+  background: #5b4bc4;
+}
+
+.login-button:disabled {
+  background: #a8a4e6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #636e72;
+}
+
+.signup-link a {
+  color: #6c5ce7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .login-wrapper {
+    padding: 25px;
+  }
+  
+  .login-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  input {
+    padding: 10px 14px 10px 36px;
+  }
+}
