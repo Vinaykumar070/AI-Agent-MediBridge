@@ -9,7 +9,7 @@ sgMail.setApiKey(EmailKey);
 export const getWeather = tool(
     async ({ query, location = 'Bangalore, KA' }) => {
         try {
-            const API_KEY = process.env.WEATHER_API_KEY ?? `z1jBwV4Rz8obuHXlb2gJws74K8ay6Ue2`;
+            const API_KEY = process.env.WEATHER_API_KEY ?? ``;
             const API = process.env.WEATHER_API ?? `https://api.tomorrow.io/v4/weather/realtime`;
             let config = {
                 method: 'GET',
